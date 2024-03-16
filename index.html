@@ -30,11 +30,13 @@
     </header>
 
 	<script>
-    function openPDF(Thesis.pdf) {
-       
-        window.open(Thesis.pdf, '_blank');
+    function openPDF(pdfPath) {
+        // You can customize this function to open the PDF in a new tab or in the same window.
+        // For example, to open in a new tab:
+        window.open(pdfPath, '_blank');
     }
 </script>
+	
     <section class="section pt-0" id="about">
         <!-- container -->
         <div class="container text-center">
@@ -173,7 +175,7 @@
                     <img src="lve.png" alt="" id="drs" width="490">
                     <h4 id="pro5">project5</h4>
                     <p id="para5" > Real-time arrhythmia detection using cnn on ecg signals.</p>
-		    <button onclick="openPDF('path/to/your/pdf.pdf')">Open PDF</button>
+		    <button class="btn btn-primary" id="StartedBtn" onclick="openPDF('Thesis.pdf')">Open PDF</button>
                    
                 </div>
 		
