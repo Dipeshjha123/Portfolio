@@ -27,9 +27,14 @@
 
             <button class="btn btn-primary" id="StartedBtn" >Welcome to my website</button>
         </div>              
-    </header><!-- end of page header -->
+    </header>
 
-    <!-- about section -->
+	<script>
+    function openPDF(pdfPath) {
+       
+        window.open(pdfPath, '_blank');
+    }
+</script>
     <section class="section pt-0" id="about">
         <!-- container -->
         <div class="container text-center">
@@ -167,9 +172,11 @@
                 <div class="Project">
                     <img src="lve.png" alt="" id="drs" width="490">
                     <h4 id="pro5">project5</h4>
-                    <p id="para5" >It's just a funny love project. I have used HTML, CSS, and JavaScript. In which user, when hovering the mouse, just walks away and never catches it.</p>
+                    <p id="para5" > Real-time arrhythmia detection using cnn on ecg signals.</p>
+		    <button onclick="openPDF('path/to/your/pdf.pdf')">Open PDF</button>
                    
                 </div>
+		
     
                 </div>
             </div>
